@@ -18,8 +18,21 @@ This collaborative effort not only provided us with a profound understanding of 
 ## Start Server
 The project is wrapped a python package. Download the `.whl` file and install with `pip`. 
 ```shell
+
 # installation
 pip install rsb_data_analytics.whl
+
+# See HELP
+python -m rsb_data_analytics run --help
+# Usage: python -m rsb_data_analytics run [OPTIONS]
+# 
+#   Start Web Svc.
+# 
+# Options:
+#   -h, --host TEXT     host IP  [default: localhost]
+#   -p, --port INTEGER  Service port  [default: 21116]
+#   --help              Show this message and exit.
+
 
 # Start 
 python -m rsb_data_analytics run 
