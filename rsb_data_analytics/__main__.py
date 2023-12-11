@@ -11,7 +11,7 @@ def run():
     import uvicorn
     from rsb_data_analytics.app import app
     try:
-        uvicorn.run(app='rsb_data_analytics.app:app', host='0.0.0.0', port=21116)
+        uvicorn.run(app='rsb_data_analytics.app:app', host='localhost', port=21116)
     except Exception as e:
         print(e)
 
