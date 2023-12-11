@@ -1,0 +1,231 @@
+{% extends "base.html" %}
+{% block title %}
+About Me
+{% endblock title %}
+
+{% block pagename %}
+About Me
+{% endblock pagename %}
+
+{% block content %}
+<el-row :gutter="8">
+    <el-card style="padding: 10px 10p 10px 10px; margin-bottom: 5px;">
+        <el-col :sm="24" :lg="6">
+            <h2>Contact</h2>
+            <br>
+            <p>
+                <i class="el-icon-phone"></i> +336 04 65 87 03 <br>
+                <i class="el-icon-message"></i> <a
+                    href="mailto:ming-chieh.kuo@outlook.com">ming-chieh.kuo@outlook.com</a> <br>
+                <i class="el-icon-s-promotion"></i> Thionville,France
+            </p>
+        </el-col>
+        <el-col :sm="18" :lg="14">
+            <h2>Ming Chieh Kuo</h2>
+            <strong>CAMPUS PROGRAM BATCH #5 BACKEND ENGINEER</strong>
+            <p class="desc-area" style="padding-right: 40px;">
+                Dedicated financial analyst seeking to pivot into backendengineering. Eager to enroll in AppWorks Schools
+                BackendEngineering program to acquire technical proficiency andgain hands-on experience.Committed to a
+                dynamic careerchange and continuous skill development.
+            </p>
+        </el-col>
+        <el-col :sm="6" :lg="4">
+            <el-avatar src="static/img/profile-photo.png" :size="160"></el-avatar>
+        </el-col>
+    </el-card>
+
+</el-row>
+<el-row :gutter="8">
+    <el-card style="padding: 10px 10px 50px 10px; margin-bottom: 5px;">
+        <el-col :sm="24" :lg="8" style="padding: 0px 50px 0px 20px;">
+            <el-row>
+                <h2>Language</h2>
+                <p class="desc-area">
+                <ul style="padding-left: 20px;">
+                    <li>Mandarin: Native</li>
+                    <li>English: Fluent</li>
+                    <li>French: Beginner</li>
+                </ul>
+                </p>
+            </el-row>
+            <el-row class="author-info-sect">
+                <h2>Skill</h2>
+                <p class="desc-area">
+                <ul style="padding-left: 20px;">
+                    <li>Languages: Python, R.</li>
+                    <ul style="padding-left: 20px;">
+                        <li><strong><i>Python</i></strong> Libraries: Numpy, SciPy,
+                            Pandas, Matplotlib, PySQL, scikit-learn,
+                            seaborn.</li>
+                        <li><strong><i>R</i></strong> Packages: ggplot2, zoo, xts.</li>
+                    </ul>
+                    <li>Applications : Excel, VBA, Word,
+                        PowerPoint, SharePoint, Tableau,
+                        Power BI.</li>
+                    <li>SAP/ERP: FI-GL, FI-AP, FI-AR.</li>
+                </ul>
+                </p>
+            </el-row>
+            <el-row class="author-info-sect">
+                <h2>Education</h2>
+                <div class="author-info-sub">
+                    <strong>Master of Financial Data Intelligence</strong>
+                    <p>
+                    <p>2021-Current</p>
+                    <p><u>Rennes School of Business</u></p>
+                    <p class="desc-area">
+                    <ul style="padding-left: 20px;">
+                        <li>Deep Learning in Neural Networks for Finance</li>
+                        <li>Financial Data Infrastructure</li>
+                        <li>Economic Modelling</li>
+                    </ul>
+                    </p>
+                    </p>
+                </div>
+                <el-divider></el-divider>
+                <div class="author-info-sub">
+                    <strong>Global MBA</strong>
+                    <p>
+                    <p>2019-2023</p>
+                    <p><u>National Yang Ming Chiao Tung University</u></p>
+                    <p class="desc-area">
+                    <ul style="padding-left: 20px;">
+                        <li>Data Science and Decision Support</li>
+                        <li>Global Business Management</li>
+                        <li>Financial Management and Investment</li>
+                    </ul>
+                    </p>
+                    </p>
+                </div>
+                <el-divider></el-divider>
+                <div class="author-info-sub">
+                    <strong>Bachelor of Accounting</strong>
+                    <p>
+                    <p>2011-2015</p>
+                    <p><u>National Chengchi University</u></p>
+                    <p class="desc-area">
+                    <ul style="padding-left: 20px;">
+                        <li>Accounting Information System</li>
+                        <li>Analysis of Financial Accounting</li>
+                        <li>Commercial Law</li>
+                    </ul>
+                    </p>
+                    </p>
+                </div>
+            </el-row>
+        </el-col>
+        <el-col :sm="24" :lg="16">
+            <el-row style="padding-bottom: 20px;">
+                <h2><i class="el-icon-suitcase"></i> Experiences</h2>
+                <div style="margin-bottom: 30px;">
+                    <el-descriptions style="padding-top: 5px;" title="Financial Analyst | NewSpace Capital GP SA">
+                        <el-descriptions-item label="Location">Luxembourg</el-descriptions-item>
+                        <el-descriptions-item label="Period">2022 - Now</el-descriptions-item>
+                    </el-descriptions>
+                    <p style="padding: 0px 30px 0px 30px">
+                    <ul style="padding: 0px 10px 0px 30px">
+                        <li>Performed cash flow analysis by building business models
+                            in support of working capital management goals.</li>
+                        <li>
+                            Prepared internal monthly operating plan reports and
+                            consolidated financial statements.
+                        </li>
+                        <li>Conducted valuation analysis of investment pipeline
+                            companies with annual revenues ranging from €7 million
+                            to €40 million.</li>
+                        <li>
+                            Reviewed reverse charge VAT payments and filed
+                            corporate income tax.</li>
+                    </ul>
+                    </p>
+                </div>
+                <el-divider></el-divider>
+                <div style="margin-bottom: 10px;">
+                    <el-descriptions style="padding-top: 5px;" title="Financial Analyst | Applied Materials">
+                        <el-descriptions-item label="Location">Hsinchu, Taiwan</el-descriptions-item>
+                        <el-descriptions-item label="Period">2018 - 2020</el-descriptions-item>
+                    </el-descriptions>
+                    <p style="padding: 0px 30px 0px 30px">
+                    <ul style="padding: 0px 10px 0px 30px">
+                        <li>Provided ongoing analysis of revenue and expenses
+                            for multiple departments.</li>
+                        <li>
+                            Improved AR collection for customers in Taiwan,
+                            China, and Singapore, reducing OTC cycle time by an
+                            overall 12%.
+                        </li>
+                        <li>Directly managed an $8.5 million payroll, travel, and
+                            miscellaneous expense account.</li>
+                        <li>
+                            Reduced travel expenditures by 40% through
+                            negotiations with department managers.</li>
+                    </ul>
+                    </p>
+                </div>
+                <el-divider></el-divider>
+                <div style="margin-bottom: 10px;">
+                    <el-descriptions style="padding-top: 5px;" title="Auditor | Deloitte & Touche">
+                        <el-descriptions-item label="Location">Hsinchu, Taiwan</el-descriptions-item>
+                        <el-descriptions-item label="Period">2015 - 2018</el-descriptions-item>
+                    </el-descriptions>
+                    <p style="padding: 0px 30px 0px 30px">
+                    <ul style="padding: 0px 10px 0px 30px">
+                        <li>Completed audits that recovered over $8 million in
+                            accounting errors regarding accruals recognition.
+                            Errors were due to trading conditions and time
+                            differences.</li>
+                        <li>
+                            Developed procedures and worked with team
+                            members to reduce field work from 3+months to 1
+                            month.
+                        </li>
+                        <li>Directly managed an $8.5 million payroll, travel, and
+                            miscellaneous expense account.</li>
+                        <li>
+                            Reduced travel expenditures by 40% through
+                            negotiations with department managers.</li>
+                    </ul>
+                    </p>
+                </div>
+            </el-row>
+            <el-row>
+                <h2><i class="el-icon-notebook-1"></i> Projects</h2>
+                <div style="margin-bottom: 10px;">
+                    <el-descriptions :column="2" style="padding-top: 5px;" title="MODELING STOCKS DATA IN DEEP LEARNING">
+                        <el-descriptions-item label="Organization">Rennes School of Business</el-descriptions-item>
+                        <el-descriptions-item label="Period">2022</el-descriptions-item>
+                    </el-descriptions>
+                    <p style="padding: 0px 30px 0px 30px">
+                    <ul style="padding: 0px 10px 0px 30px">
+                        <li>Conducted sentiment analysis of Tweets.</li>
+                        <li>
+                            LSTM applied to build a stock price prediction model.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+                <el-divider></el-divider>
+                <div style="margin-bottom: 10px;">
+                    <el-descriptions :column="2" style="padding-top: 5px;" title="HERDING MODEL AND COMPARISON BETWEEN CONSUMER DEFENSIVE AND TECH SECTORS">
+                        <el-descriptions-item label="Organization">Rennes School of Business</el-descriptions-item>
+                        <el-descriptions-item label="Period">2021</el-descriptions-item>
+                    </el-descriptions>
+                    <p style="padding: 0px 30px 0px 30px">
+                    <ul style="padding: 0px 10px 0px 30px">
+                        <li>Utilized Cross-Sectional Absolute Deviation (CSAD)
+                            approach to test the herd behavior.</li>
+                        <li>
+                            Identified Herd behavior in the tech sector but not in
+                            the consumer defensive sector.
+                        </li>
+                        <li>Suggested that in a declining tech market, investors
+                            should sell earlier to prevent a snowballing effect.</li>
+                    </ul>
+                    </p>
+                </div>
+            </el-row>
+        </el-col>
+    </el-card>
+
+</el-row>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% block sidebar %}
+<el-menu :default-active="currentUrl" style="min-height: 90%;" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" @select="goToRoute" router>
+    <el-menu-item index="/about">
+        <i class="el-icon-menu"></i>
+        <span slot="title">About Me</span>
+    </el-menu-item>
+    <el-menu-item index="/dashboard">
+        <i class="el-icon-data-line"></i>
+        <span slot="title">Dashboard</span>
+    </el-menu-item>
+</el-menu>
+{% endblock %}
