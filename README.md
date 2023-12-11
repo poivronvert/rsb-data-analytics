@@ -45,7 +45,7 @@ Visit web on `http://localhost:21116`
 - Pandas 
 - Seaborn
 - Matplotlib
-- El-Element
+- Element UI
 
 ## Copyright  
 Copyright © 2023 Alice Kuo. All Rights Reserved.
