@@ -1,0 +1,65 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+
+}
+
+
+#sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    float: left;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+#sidebar ul li {
+    margin-bottom: 10px;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#sidebar a:hover {
+    color: #ffcc00;
+}
+
+#content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.breadcrumb {
+    background-color: #f8f9fa;
+    padding: 0.75rem 1rem;
+    list-style-type: none;
+}
+
+.breadcrumb-item {
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Add your additional styles below */
+

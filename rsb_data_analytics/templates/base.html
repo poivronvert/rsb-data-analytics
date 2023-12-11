@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Your Website Title{% endblock %}</title>
+    <!-- Add your CSS links or stylesheets here -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static', path='/css/base.css') }}"> -->
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/author.css">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" crossorigin="anonymous" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <el-container style="border: 1px solid #eee; min-height: 98dvh">
+            <el-aside>
+                <el-header style="text-align: center;font-size: 35px;">
+                    Alice Kuo 
+                </el-header>
+                {% include "sidebar.html" %}
+            </el-aside>
+            <el-main>
+                <el-header style="text-align: right;">
+                    {% block pagename %} {% endblock %}
+                </el-header>
+                <div>
+                    {% block content %}{% endblock %}
+                </div>
+                <el-footer>
+                    <div style="text-align: right; padding: 20px 0px 0px 0px;">
+                        <span style="color: darkgrey;">Copyright © 2023 Alice Kuo. All Rights Reserved.</span>
+                    </div>
+                </el-footer>
+            </el-main>
+        </el-container>
+    </div>
+    <!-- import Vue before Element -->
+    <script crossorigin="anonymous" src="https://unpkg.com/vue@2/dist/vue.js"></script>
+    <!-- 引入组件库 -->
+    <script crossorigin="anonymous" src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            computed:{
+                currentUrl(){
+                    return location.pathname
+                },
+            },
+            data: function () {
+                return { 
+                    visible: false,
+                }
+            },
+            created(){
+            },
+            methods: {
+                handleOpen(key, keyPath) {
+                    console.log(key, keyPath);
+                },
+                handleClose(key, keyPath) {
+                    console.log(key, keyPath);
+                },
+                goToRoute(idx){
+                    console.log(idx)
+                    window.location.pathname = idx;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
