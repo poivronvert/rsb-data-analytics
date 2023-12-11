@@ -1,12 +1,192 @@
 {% extends "base.html" %}
 {% block title %}
-Home
+Dashboard
 {% endblock title %}
 
 {% block pagename %}
-Home
+Dashboard
 {% endblock pagename %}
 
 {% block content %}
-測試
+<el-carousel height="100vh">
+    <el-carousel-item >
+        <h2 style="margin-bottom: 10px; padding: 0px 10px 0px 10px;">Deep Learning: Word Processing</h2>
+        <el-row>
+            <el-card>
+                <div slot="header" class="clearfix">
+                    <span>Ticker News Count</span>
+                </div>
+                <div>
+                    <img src="static/img/deep-learning/ticker_news_count.png" style="width: 100%;" alt="">
+                </div>
+            </el-card>
+        </el-row>
+        <el-row :gutter="1">
+            <el-col :sm="24" :lg="12">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Stopwords</span>
+                    </div>
+                    <div>
+                        <img src="static/img/deep-learning/WordCloud Stopwords.png" style="width: 100%;" alt="">
+                    </div>
+                </el-card>
+            </el-col>
+            <el-col :sm="24" :lg="12">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>WordCloud</span>
+                    </div>
+                    <div>
+                        <img src="static/img/deep-learning/WordCloud.png" style="width: 100%;" alt="">
+                    </div>
+                </el-card>
+            </el-col>
+        </el-row>
+    </el-carousel-item>
+
+    <el-carousel-item >
+        <h2 style="margin-bottom: 10px; padding: 0px 10px 0px 10px;">Web3</h2>
+        <el-row :gutter="1">
+            <el-col :sm="24" :lg="12">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Features</span>
+                    </div>
+                    <div>
+                        <img src="static/img/nft-blockchain/feature.png" style="height: 300px;" alt="">
+                    </div>
+                </el-card>
+            </el-col>
+            <el-col :sm="24" :lg="12">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Heatmap</span>
+                    </div>
+                    <div>
+                        <img src="static/img/nft-blockchain/heatmap.png" style="height: 300px" alt="">
+                    </div>
+                </el-card>
+            </el-col>
+        </el-row>
+
+        <el-row :gutter="1">
+            <el-col :sm="12" :lg="6">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Gas: NFT</span>
+                    </div>
+                    <div>
+                        <img src="static/img/nft-blockchain/gas.png" style="width: 100%;max-height: 150px;" alt="">
+                    </div>
+                </el-card>
+            </el-col>
+            <el-col :sm="12" :lg="6">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Gas: FT</span>
+                    </div>
+                    <div>
+                        <img src="static/img/nft-blockchain/gasFT.png" style="width: 100%;max-height:150px;" alt="">
+                    </div>
+                </el-card>
+            </el-col>
+            <el-col :sm="12" :lg="6">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Balance: FT</span>
+                    </div>
+                    <div>
+                        <img src="static/img/nft-blockchain/ft-balance.png" style="width: 100%;max-height: 150;" alt="">
+                    </div>
+                </el-card>
+            </el-col>
+            <el-col :sm="12" :lg="6">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Balance: NFT</span>
+                    </div>
+                    <div>
+                        <img src="static/img/nft-blockchain/nft-balance.png" style="width: 100%;max-height: 150px;" alt="">
+                    </div>
+                </el-card>
+            </el-col>
+        </el-row>
+    </el-carousel-item>
+
+    <el-carousel-item >
+        <h2 style="margin-bottom: 10px; padding: 0px 10px 0px 10px;">History</h2>
+        <el-row :gutter="1">
+            <el-col :sm="24" :lg="16">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Top 20 of Eth</span>
+                    </div>
+                    <div>
+                        <img src="static/img/nft-blockchain/top20eth.png" style="height: 450px;" alt="">
+                    </div>
+                </el-card>
+            </el-col>
+            <el-col :sm="24" :lg="8">
+                <el-row :gutter="1">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Top 10 of FT</span>
+                    </div>
+                    <div>
+                        <img src="static/img/nft-blockchain/top10ft.png" style="height: 250px;" alt="">
+                    </div>
+                </el-card></el-row>
+                <el-row :gutter="1">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Top 10 of NFT</span>
+                    </div>
+                    <div>
+                        <img src="static/img/nft-blockchain/top10nft.png" style="height: 250px;" alt="">
+                    </div>
+                </el-card></el-row>
+            </el-col>
+        </el-row>
+    </el-carousel-item>
+
+    <el-carousel-item >
+        <h2 style="margin-bottom: 10px; padding: 0px 10px 0px 10px;">Portfolio Management</h2>
+        <el-row :gutter="1">
+            <el-col :sm="24" :lg="12">
+                <el-row :gutter="1">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Top 10 of FT</span>
+                    </div>
+                    <div>
+                        <img src="static/img/portfolio-management/cluster-silhouette_score.png" style="height: 250px;" alt="">
+                    </div>
+                </el-card></el-row>
+                <el-row :gutter="1">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Top 10 of NFT</span>
+                    </div>
+                    <div>
+                        <img src="static/img/portfolio-management/cluster.png" style="height: 250px;" alt="">
+                    </div>
+                </el-card></el-row>
+            </el-col>
+            <el-col :sm="24" :lg="12">
+                <el-card>
+                    <div slot="header" class="clearfix">
+                        <span>Correlation Matrix</span>
+                    </div>
+                    <div>
+                        <img src="static/img/portfolio-management/correlation-matrix.png" style="height: 550px;" alt="">
+                    </div>
+                </el-card>
+            </el-col>
+        </el-row>
+    </el-carousel-item>
+  </el-carousel>
+
+
+
 {% endblock content %}
